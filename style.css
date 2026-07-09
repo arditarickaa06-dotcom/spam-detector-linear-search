@@ -1,0 +1,222 @@
+/* ===========================
+   GENERAL
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#FFF5F7,#FFE6EF);
+    min-height:100vh;
+}
+
+/* ===========================
+   JUDUL
+=========================== */
+
+.judul{
+    color:#D63384;
+    font-size:38px;
+    font-weight:700;
+    margin-bottom:8px;
+}
+
+.subjudul{
+    color:#666;
+    font-size:15px;
+    margin-bottom:30px;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.card{
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(214,51,132,.15);
+    margin-bottom:25px;
+    animation:fadeIn .5s ease;
+}
+
+.card-header{
+    background:#F8BBD0;
+    color:#7A1E53;
+    font-size:18px;
+    font-weight:600;
+    padding:15px;
+    border:none;
+}
+
+.card-body{
+    padding:25px;
+}
+
+/* ===========================
+   INPUT
+=========================== */
+
+.form-label{
+    color:#555;
+    font-weight:500;
+}
+
+.form-control{
+    height:50px;
+    border-radius:12px;
+    border:2px solid #F8BBD0;
+    transition:.3s;
+}
+
+.form-control:focus{
+    border-color:#D63384;
+    box-shadow:0 0 8px rgba(214,51,132,.3);
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.btnPink{
+
+    background:#D63384;
+    color:white;
+    border:none;
+    border-radius:12px;
+    padding:10px 28px;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+.btnPink:hover{
+
+    background:#C2185B;
+    color:white;
+    transform:translateY(-2px);
+
+}
+
+.btnReset{
+
+    background:#F8BBD0;
+    color:#7A1E53;
+    border:none;
+    border-radius:12px;
+    padding:10px 28px;
+    margin-left:10px;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+.btnReset:hover{
+
+    background:#F48FB1;
+    color:#7A1E53;
+    transform:translateY(-2px);
+
+}
+
+/* ===========================
+   TABLE
+=========================== */
+
+.table{
+    margin-bottom:0;
+}
+
+.table th{
+
+    background:#FFF2F7;
+    color:#7A1E53;
+    font-weight:600;
+    vertical-align:middle;
+
+}
+
+.table td{
+
+    vertical-align:middle;
+
+}
+
+.table-hover tbody tr:hover{
+
+    background:#FFEAF2;
+
+}
+
+/* ===========================
+   HASIL
+=========================== */
+
+#hasilCard{
+
+    display:none;
+
+}
+
+.status-spam{
+
+    color:#DC3545;
+    font-weight:bold;
+
+}
+
+.status-aman{
+
+    color:#198754;
+    font-weight:bold;
+
+}
+
+/* ===========================
+   ANIMATION
+=========================== */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+        transform:translateY(15px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+    .judul{
+
+        font-size:28px;
+
+    }
+
+    .btnPink,
+    .btnReset{
+
+        width:100%;
+        margin-top:10px;
+        margin-left:0;
+
+    }
+
+}
